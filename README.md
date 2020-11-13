@@ -4,7 +4,144 @@
         <head>
             <meta charset="utf-8" />
             <title>Online Flower Shop</title>
-            <link rel="stylesheet" href="css/style.css">
+            <style>
+                *{margin:0;font-family: serif;font-size: 15px}
+                .contianer{width:1300px;margin:auto}
+                .header{overflow: hidden;position: fixed;background: #fff;z-index: 1;width: 100%;top:0}
+                .header .title{font-size: 30px;font-family:fantasy;}
+                .header a:hover,.header a:active{text-decoration: underline}
+                .header a:link,.header a:visited{color: #000}
+                .dropdown1,.dropdown2,.dropdown3,.dropdown4,.dropdown5,.dropdown6
+                {display: inline-block;line-height: 50px;}
+                .dropdown1-content,.dropdown2-content,.dropdown3-content,.dropdown4-content,.dropdown5-content,.dropdown6-content
+                {position: fixed;min-width: 160px;z-index: 1;display: none;}
+                .dropdown1-content a ,.dropdown2-content a,.dropdown3-content a,.dropdown4-content a,.dropdown5-content a
+                ,.dropdown6-content a{display: block;color: gray;margin-left: 20px}
+                .dropdown1:hover .dropdown1-content{display: block;margin-left: 65px;background: #fff;width: 200px}
+                .dropdown2:hover .dropdown2-content{display: block;margin-left: 25px;background: #fff;width: 150px}
+                .dropdown3:hover .dropdown3-content{display: block;margin-left: -360px;background: #fff;width: 1100px}
+                .dropdown3-content-first,.dropdown3-content-second,.dropdown3-content-third,.dropdown3-content-fourth
+                {display:inline-block;margin-left: 90px}
+                .dropdown4:hover .dropdown4-content{display: block;margin-left: 40px;background: #fff;width: 180px}
+                .dropdown5:hover .dropdown5-content{display: block;margin-left: 20px;background: #fff;width: 150px}
+                .dropdown6:hover .dropdown6-content{display: block;margin-left: 25px;background: #fff;width: 180px}
+                .nav1,.nav2,.nav3,.nav4{position: absolute;height:400px;width: 100%;margin-top: 100px ;}
+                .nav1{animation:slide1 12s linear infinite}
+                .nav2{animation:slide2 12s linear infinite}
+                .nav3{animation:slide3 12s linear infinite}
+                .nav4{animation:slide4 12s linear infinite}
+                .nav1 img,.nav2 img,.nav3 img,.nav4 img {position: absolute;width:1310px;height: 400px;border-radius: 50px}
+                 @keyframes slide1{
+                    0%
+                    {
+                        visibility: visible;
+                    }
+                    25%
+                    {
+                        visibility: hidden;
+                    }
+                    50%
+                    {
+                        visibility: hidden;
+                    }
+                    75%
+                    {
+                        visibility: hidden;
+                    }
+                    100%
+                    {
+                        visibility: visible;
+                    }
+                }
+                @keyframes slide2{
+                    0%
+                    {
+                        visibility: hidden;
+                    }
+                    25%
+                    {
+                        visibility: hidden;
+                    }
+                    50%
+                    {
+                        visibility: visible;
+                    }
+                    75%
+                    {
+                        visibility: hidden;
+                    }
+                    100%
+                    {
+                        visibility: hidden;
+                    }
+                }
+                @keyframes slide3{
+                    0%
+                    {
+                        visibility: hidden;
+                    }
+                    25%
+                    {
+                        visibility: hidden;
+                    }
+                    50%
+                    {
+                        visibility: hidden;
+                    }
+                    75%
+                    {
+                        visibility: visible;
+                    }
+                    100%
+                    {
+                        visibility: hidden;
+                    }
+                    
+                }
+                @keyframes slide4{
+                    0%
+                    {
+                        visibility: hidden;
+                    }
+                    25%
+                    {
+                        visibility: hidden;
+                    }
+                    50%
+                    {
+                        visibility: hidden;
+                    }
+                    75%
+                    {
+                        visibility: hidden;
+                    }
+                    100%
+                    {
+                        visibility: visible;
+                    }
+                }
+                .text{position: absolute;width: 370px;margin-left: 50px;margin-top: 80px;background: #fff;opacity: 0.7;padding: 20px}
+                .text p,.text span{font-size:30px}
+                .secondList{margin-top: 510px;}
+                .secondList ul{list-style-type: none;display: inline-flex;}
+                .secondList ul li{margin-left: 40px}
+                .secondList ul li:active{color:red}
+                .secondList ul li:hover{color: red}
+                .price{color: gray;line-height: 40px}
+                .price:hover .addtocart{display: inline-block}
+                .products span{display: inline-block;margin-left: 60px;}
+                .products img{width:250px;height: 300px}
+                .video{background: #F7F2F2 ;width: 100%;top:0}
+                .video span{display: inline-block;}
+                .flower_experts span{display: inline-block;}
+                .flower_experts img{border-radius: 50%;width: 200px;height: 200px;margin-left: 95px;margin-top: 30px}
+                .from span{display: inline-block;}
+                .from span img{width: 300px;height: 200px}
+                .footer {background: #F7F2F2;width: 100%}
+                .footer span{display: inline-block;margin-top: 80px;margin-bottom: 80px;margin-left: 150px}
+                .footer span a{display: block;color: gray;}
+                .footer span a:hover{color: red}
+            </style>
         </head>
         <body>
             <div class="header">
